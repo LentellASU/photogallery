@@ -1,137 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" href="styles.css" />
-</head>
+	<body>
+		<header>
+			<h1>TK Photography</h1>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#top">top</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="main-container">
+				<section id="about">
+					<h2>About</h2>
 
-<body>
-	<header>
-		<h1>TK Photography</h1>
-		<nav>
-			<ul>
-				<li><a href="http://">About</a></li>
-				<li><a href="http://">Gallery</a></li>
-				<li><a href="http://">Contact</a></li>
-				<li><a href="http://">top</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<div class="main-container">
-		<section id="about">
-			<h2>About</h2>
+					<p>Hello!</p>
+					<p>
+						I’m TK and I’m a photographer. I love looking at life through the
+						lens of my camera. Landscape photography is my speciality and it’s
+						taken me all over the world.
+					</p>
+				</section>
+				<section id="gallery">
+					<h2>Gallery</h2>
+					<p>
+						Here are some highlights of my work. The locations and year are in
+						the caption.
+					</p>
+					<div class="gallery-grid">
+						<article aria-label="Chile, 2001">
+							<figure>
+								<img
+									src="images/Chile.png"
+									alt="picture of the beach with large rocks"
+								/>
+								<figcaption>Chile, 2001</figcaption>
+							</figure>
+						</article>
+						<article aria-label="Guatemala, 1997">
+							<figure>
+								<img
+									src="images/Guatemala.png"
+									alt="picture of purple sunset and flowers near a lake"
+								/>
+								<figcaption>Guatemala, 1997</figcaption>
+							</figure>
+						</article>
+						<article aria-label="Hawaii, 2010">
+							<figure>
+								<img
+									src="images/Hawaii.png"
+									alt="picture of lush green Hawaiian island"
+								/>
+								<figcaption>Hawaii, 2010</figcaption>
+							</figure>
+						</article>
+						<article aria-label="Iran, 1999">
+							<figure>
+								<img src="images/Iran.png" alt="picture of desert plants" />
+								<figcaption>Iran, 1999</figcaption>
+							</figure>
+						</article>
+						<article aria-label="Ireland, 2012">
+							<figure>
+								<img
+									src="images/Ireland.png"
+									alt="picture of green hills and trees"
+								/>
+								<figcaption>Ireland, 2012</figcaption>
+							</figure>
+						</article>
+						<article aria-label="Italy, 2015">
+							<figure>
+								<img
+									src="images/Italy.png"
+									alt="picture of a boat on a lake near mountains"
+								/>
+								<figcaption>Italy, 2015</figcaption>
+							</figure>
+						</article>
+						<article aria-label="Moab Desert, 2020">
+							<figure>
+								<img
+									src="images/Moab-Desert.png"
+									alt="picture of a cave on a cliff"
+								/>
+								<figcaption>Moab Desert, 2020</figcaption>
+							</figure>
+						</article>
+						<article aria-label="Rocky Mountains, 2009">
+							<figure>
+								<img
+									src="images/Rocky-Mountains.png"
+									alt="picture of rocky cliffs"
+								/>
+								<figcaption>Rocky Mountains, 2009</figcaption>
+							</figure>
+						</article>
+						<article aria-label="Switzerland, 2014">
+							<figure>
+								<img
+									src="images/Switzerland.png"
+									alt="picture of snowy mountains"
+								/>
+								<figcaption>Switzerland, 2014</figcaption>
+							</figure>
+						</article>
+						<article aria-label="UK, 2005">
+							<figure>
+								<img src="images/UK.png" alt="picture of fields on a hills" />
+								<figcaption>UK, 2005</figcaption>
+							</figure>
+						</article>
+						<article aria-label="USA, 2021">
+							<figure>
+								<img src="images/USA.png" alt="picture of flowers in a field" />
+								<figcaption>USA, 2021</figcaption>
+							</figure>
+						</article>
+						<article aria-label="Wyoming, 2021">
+							<figure>
+								<img
+									src="images/Wyoming.png"
+									alt="picture of a lake next to trees and a mountain in the distance"
+								/>
+								<figcaption>Wyoming, 2021</figcaption>
+							</figure>
+						</article>
+					</div>
+				</section>
+			</div>
+			<section id="contact">
+				<form>
+					<h2>Contact</h2>
+					<p>Please fill out this form and I’ll connect with you soon.</p>
 
-			<p>Hello!</p>
-			<p>
-				I’m TK and I’m a photographer. I love looking at life through the lens
-				of my camera. Landscape photography is my speciality and it’s taken me
-				all over the world.
-			</p>
-		</section>
-		<article id="gallery">
-			<h2>Gallery</h2>
-			<p>
-				Here are some highlights of my work. The locations and year are in the
-				caption.
-			</p>
-			<div class="gallery-grid">
-				<article aria-label="Chile, 2001">
-					<figure>
-						<img src="images/Chile.png" alt="picture of the beach with large rocks" />
-						<figcaption>Chile, 2001</figcaption>
-					</figure>
-				</article>
-				<article aria-label="Guatemala, 1997">
-					<figure>
-						<img src="images/Guatemala.png" alt="picture of purple sunset and flowers near a lake" />
-						<figcaption>Guatemala, 1997</figcaption>
-					</figure>
-				</article>
-				<article aria-label="Hawaii, 2010">
-					<figure>
-						<img src="images/Hawaii.png" alt="picture of lush green Hawaiian island" />
-						<figcaption>Hawaii, 2010</figcaption>
-					</figure>
-				</article>
-				<article aria-label="Iran, 1999">
-					<figure>
-						<img src="images/Iran.png" alt="picture of desert plants" />
-						<figcaption>Iran, 1999</figcaption>
-					</figure>
-				</article>
-				<article aria-label="Ireland, 2012">
-					<figure>
-						<img src="images/Ireland.png" alt="picture of green hills and trees" />
-						<figcaption>Ireland, 2012</figcaption>
-					</figure>
-				</article>
-				<article aria-label="Italy, 2015">
-					<figure>
-						<img src="images/Italy.png" alt="picture of a boat on a lake near mountains" />
-						<figcaption>Italy, 2015</figcaption>
-					</figure>
-				</article>
-				<article aria-label="Moab Desert, 2020">
-					<figure>
-						<img src="images/Moab-Desert.png" alt="picture of a cave on a cliff" />
-						<figcaption>Moab Desert, 2020</figcaption>
-					</figure>
-				</article>
-				<article aria-label="Rocky Mountains, 2009">
-					<figure>
-						<img src="images/Rocky-Mountains.png" alt="picture of rocky cliffs" />
-						<figcaption>Rocky Mountains, 2009</figcaption>
-					</figure>
-				</article>
-				<article aria-label="Switzerland, 2014">
-					<figure>
-						<img src="images/Switzerland.png" alt="picture of snowy mountains" />
-						<figcaption>Switzerland, 2014</figcaption>
-					</figure>
-				</article>
-				<article aria-label="UK, 2005">
-					<figure>
-						<img src="images/UK.png" alt="picture of fields on a hills" />
-						<figcaption>UK, 2005</figcaption>
-					</figure>
-				</article>
-				<article aria-label="USA, 2021">
-					<figure>
-						<img src="images/USA.png" alt="picture of flowers in a field" />
-						<figcaption>USA, 2021</figcaption>
-					</figure>
-				</article>
-				<article aria-label="Wyoming, 2021">
-					<figure>
-						<img src="images/Wyoming.png"
-							alt="picture of a lake next to trees and a mountain in the distance" />
-						<figcaption>Wyoming, 2021</figcaption>
-					</figure>
-				</article>
-			</div></div>
-	</main>
-	<section id="form-container">
-		<form action="post">
-			<h2>Contact</h2>
-			<p>Please fill out this form and I’ll connect with you soon.</p>
-
-			<p>Your contact information</p>
-			<label for="name">Name</label>
-			<input type="text" name="name" id="name" placeholder="Your full name" />
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" placeholder="Enter your email address" />
-			<label for="message">Message</label>
-			<input type="text" name="message" id="message" placeholder="What can I help you with?" />
-			<input type="submit" value="Submit" />
-		</form>
-	</section>
-	<footer>
-		<small>Copyright 2021 TK Photography</small>
-	</footer>
-</body>
-
+					<p>Your contact information</p>
+					<label for="name">Name</label>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Your full name"
+					/>
+					<label for="email">Email</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Enter your email address"
+					/>
+					<label for="message">Message</label>
+					<input
+						type="text"
+						name="message"
+						id="message"
+						placeholder="What can I help you with?"
+					/>
+					<input type="submit" value="Submit" />
+				</form>
+			</section>
+		</main>
+		<footer>
+			<small>Copyright 2021 TK Photography</small>
+		</footer>
+	</body>
 </html>
