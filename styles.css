@@ -133,118 +133,121 @@ table {
 /* end css reset */
 
 :root {
-    --green: #007d7b;
-    --black: #000000;
-    --white: #ffffff;
+	--green: #007d7b;
+	--black: #000000;
+	--white: #ffffff;
 }
 /* Typography */
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--white);
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--white);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background-color: #000000;
+	background-color: #000000;
+	margin: 0 auto;
+	width: 100%;
+    max-width: 485px;
+}
+.main-container {
+    padding: 0 20px;
     margin: 0 auto;
-    width: 485px;
 }
 /* Font Sizes */
 p {
-    font-size: 1.25em;
+	font-size: 1.25em;
 }
 
 figcaption,
 label,
 input,
 small {
-    font-size: 1em;
+	font-size: 1em;
 }
 
 nav a {
-    font-size: 1.5em;
-}
-
-h1 {
-    font-size: 3em;
+	font-size: 1.5em;
 }
 
 h2 {
-    font-size: 2em;
-}
-/* Nav section */
-h1 {
-    text-align: center;
-    padding: 0.5em;
-    margin: 0;
-    color: var(--green);
-    background-color: var(--white);
+	font-size: 2em;
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
+/* Nav section */
+h1 {
+	text-align: center;
+	padding: 0.5em 0;
+	margin: 0;
+	color: var(--green);
+	background-color: var(--white);
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
 }
 nav li:last-child {
-    display: none;
+	display: none;
 }
-nav a{
-    color: var(--white);
-    text-decoration: none;
+nav a {
+	color: var(--white);
+	text-decoration: none;
 }
 
 /* Main section */
 main {
-    background-color: var(--white);
-    color: var(--black);
+	background-color: var(--white);
+	color: var(--black);
 }
 main h2 {
-    text-align: center;
-    margin: 0;
+	text-align: center;
+	margin: 0;
 }
-main p  {
-    margin-left:5px;
+main p {
+	margin-left: 5px;
 }
 
 /* Put the images into a grid */
-.gallery-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-    row-gap: 5px;
-    position: relative;
+.gallery-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 5px;
+	position: relative;
 }
 
 article[aria-label] > figure {
-    position: relative;
+	position: relative;
+	margin: 0;
+	padding: 5px;
 }
 /* Put the caption on top of the image */
 img {
-    display: block;
-    width: 100%;
-
+	display: block;
+	width: 100%;
 }
 
-article[aria-label] > figure > figcaption{
-    text-transform: uppercase;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    position: absolute;
-    padding: 0.5em;
-    font-weight: bold;
-    z-index: 1;
+article[aria-label] > figure > figcaption {
+	text-transform: uppercase;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	position: absolute;
+	padding: 0.5em;
+	font-weight: bold;
+	z-index: 1;
 }
 .gallery-grid > article:nth-of-type(1) figcaption,
 .gallery-grid > article:nth-of-type(3) figcaption,
 .gallery-grid > article:nth-of-type(6) figcaption,
-.gallery-grid > article:nth-of-type(7) figcaption{
-    bottom: 0;
-    left: 50%;
-
+.gallery-grid > article:nth-of-type(7) figcaption {
+	bottom: 0;
+	left: 50%;
 }
 .gallery-grid > article:nth-of-type(2) figcaption,
 .gallery-grid > article:nth-of-type(4) figcaption,
@@ -253,99 +256,104 @@ article[aria-label] > figure > figcaption{
 .gallery-grid > article:nth-of-type(9) figcaption,
 .gallery-grid > article:nth-of-type(10) figcaption,
 .gallery-grid > article:nth-of-type(11) figcaption,
-.gallery-grid > article:nth-of-type(12) figcaption{
-    top: 30px;
-    left: 50%;
-
+.gallery-grid > article:nth-of-type(12) figcaption {
+	top: 30px;
+	left: 50%;
 }
 .gallery-grid > article:nth-of-type(1) figcaption,
 .gallery-grid > article:nth-of-type(2) figcaption,
 .gallery-grid > article:nth-of-type(3) figcaption,
 .gallery-grid > article:nth-of-type(7) figcaption,
-.gallery-grid > article:nth-of-type(12) figcaption{
-   color: var(--white);
+.gallery-grid > article:nth-of-type(12) figcaption {
+	color: var(--white);
 }
 
 /* Form area */
-#form-container{
-    width: 95%;
-    margin: 0 auto;
+#form-container {
+	width: 95%;
+	margin: 0 auto;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    margin: 0 auto;
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	margin: 0 auto;
 }
-form label, form input, form p{
-    width: 100%;
-    margin-bottom: 10px;
+form label,
+form input,
+form p {
+	width: 100%;
+	margin-bottom: 10px;
 }
 form p {
-    text-align: center;
+	text-align: center;
 }
 /* Hide the second paragraph in the form */
-form  p + p {
-    display: none;
+form p + p {
+	display: none;
 }
 form label {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 form input {
-    color: var(--green);
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 1em;
-    height: 30px;
+	color: var(--green);
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 1em;
+	height: 30px;
 }
-form input[type="text"], form input[type="email"], form label {
-    padding-left: 10px;
-    width: 85%;
+form input[type="text"],
+form input[type="email"],
+form label {
+	padding-left: 10px;
+	width: 85%;
+}
+form ::placeholder {
+    color: var(--green);
 }
 form input[type="submit"] {
-    background-color: var(--green);
-    border: none;
-    padding: 0.5em;
-    color: var(--white);
-    cursor: pointer;
-    border-radius: 15px;
-    width: 50%;
-    margin-bottom: 55px;
+	background-color: var(--green);
+	border: none;
+	padding: 0.5em;
+	color: var(--white);
+	cursor: pointer;
+	border-radius: 15px;
+	width: 50%;
+	margin-bottom: 55px;
 }
 /* footer */
 footer {
-    text-align: center;
+	text-align: center;
 }
-
-@media screen and (min-width: 880px){
-    body {
-        width: 880px;
-    }
-    h1 {
-        text-align: left;
-    }
-    nav ul{
-        justify-content: center;        
-    }
-    nav ul li:not(:last-child){
-        margin-right: 20px;
-    }
-    .gallery-grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+/* Medium view */
+@media screen and (min-width: 881px) {
+	body {
+		max-width: 880px;
+	}
+	h1 {
+		text-align: left;
+	}
+	nav ul {
+		justify-content: center;
+	}
+	nav ul li:not(:last-child) {
+		margin-right: 40px;
+	}
+	.gallery-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
-
-@media screen and (min-width: 1300px){
-    body {
-        width: 1300px;
-    }
-        nav ul{
-        justify-content: end;        
-    }
-    .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+/* Large view */
+@media screen and (min-width: 1300px) {
+	body {
+		max-width: 1300px;
+	}
+	nav ul {
+		justify-content: end;
+	}
+	.gallery-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
