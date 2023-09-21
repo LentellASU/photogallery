@@ -171,7 +171,9 @@ small {
 nav a {
 	font-size: 1.5em;
 }
-
+nav h2 {
+	display: none;
+}
 h2 {
 	font-size: 2em;
 }
@@ -227,7 +229,7 @@ main p {
 	position: relative;
 }
 
-article[aria-label] > figure {
+figure {
 	position: relative;
 	margin: 0;
 	padding: 5px;
@@ -238,7 +240,7 @@ img {
 	width: 100%;
 }
 
-article[aria-label] > figure > figcaption {
+figure > figcaption {
 	text-transform: uppercase;
 	text-align: center;
 	transform: translate(-50%, -50%);
@@ -248,29 +250,29 @@ article[aria-label] > figure > figcaption {
 	font-weight: bold;
 	z-index: 1;
 }
-.gallery-grid > article:nth-of-type(1) figcaption,
-.gallery-grid > article:nth-of-type(3) figcaption,
-.gallery-grid > article:nth-of-type(6) figcaption,
-.gallery-grid > article:nth-of-type(7) figcaption {
+.gallery-grid > figure:nth-of-type(1) figcaption,
+.gallery-grid > figure:nth-of-type(3) figcaption,
+.gallery-grid > figure:nth-of-type(6) figcaption,
+.gallery-grid > figure:nth-of-type(7) figcaption {
 	bottom: 0;
 	left: 50%;
 }
-.gallery-grid > article:nth-of-type(2) figcaption,
-.gallery-grid > article:nth-of-type(4) figcaption,
-.gallery-grid > article:nth-of-type(5) figcaption,
-.gallery-grid > article:nth-of-type(8) figcaption,
-.gallery-grid > article:nth-of-type(9) figcaption,
-.gallery-grid > article:nth-of-type(10) figcaption,
-.gallery-grid > article:nth-of-type(11) figcaption,
-.gallery-grid > article:nth-of-type(12) figcaption {
+.gallery-grid > figure:nth-of-type(2) figcaption,
+.gallery-grid > figure:nth-of-type(4) figcaption,
+.gallery-grid > figure:nth-of-type(5) figcaption,
+.gallery-grid > figure:nth-of-type(8) figcaption,
+.gallery-grid > figure:nth-of-type(9) figcaption,
+.gallery-grid > figure:nth-of-type(10) figcaption,
+.gallery-grid > figure:nth-of-type(11) figcaption,
+.gallery-grid > figure:nth-of-type(12) figcaption {
 	top: 30px;
 	left: 50%;
 }
-.gallery-grid > article:nth-of-type(1) figcaption,
-.gallery-grid > article:nth-of-type(2) figcaption,
-.gallery-grid > article:nth-of-type(3) figcaption,
-.gallery-grid > article:nth-of-type(7) figcaption,
-.gallery-grid > article:nth-of-type(12) figcaption {
+.gallery-grid > figure:nth-of-type(1) figcaption,
+.gallery-grid > figure:nth-of-type(2) figcaption,
+.gallery-grid > figure:nth-of-type(3) figcaption,
+.gallery-grid > figure:nth-of-type(7) figcaption,
+.gallery-grid > figure:nth-of-type(12) figcaption {
 	color: var(--white);
 }
 
@@ -291,21 +293,24 @@ form {
 }
 form label,
 form input,
-form p {
+#contact p {
 	width: 100%;
 	margin-bottom: 10px;
 }
-form p {
+#contact p {
 	text-align: center;
 }
 /* Hide the second paragraph in the form */
 form p + p {
 	display: none;
 }
+fieldset legend {
+	display: none;
+}
 form label {
 	margin-bottom: 0;
 }
-form input{
+form input {
 	color: var(--green);
 	text-transform: uppercase;
 	font-weight: 700;
